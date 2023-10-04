@@ -1,0 +1,25 @@
+{
+  "projectName": "nx-architectures",
+  "projectOwner": "DominikPieper",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": true,
+  "commitConvention": "eslint",
+  "contributors": [
+    {
+      "login": "danielglejzner",
+      "name": "Daniel Glejzner",
+      "avatar_url": "https://avatars.githubusercontent.com/u/69144223?v=4",
+      "profile": "https://github.com/danielglejzner",
+      "contributions": [
+        "doc"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "linkToUsage": true
+}
