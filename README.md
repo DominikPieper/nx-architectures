@@ -14,6 +14,11 @@ The Nx Architecture documentation projects aims to collect information about dif
 - Be a source for people to get inspired by looking at what worked for others.
 - Add you own examples and discuss with others
 
+## How to add content
+
+Within content/docs/template you'll find a template file to copy and rename. Add your content there and open an PR.
+Right now there are different areas with space for some text, a folder structure and further explanation for the different folders. After that there is an area to add you module boundary config so people can look at how you structure your connections.
+
 ## 🧞 Commands
 
 All commands are run from the root of the project, from a terminal:

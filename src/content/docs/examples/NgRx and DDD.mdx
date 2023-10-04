@@ -4,7 +4,7 @@ description: Structure of Nx Workspace with Angular, NgRx and DDD.
 author: Daniel Glejzner
 ---
 
-import { Tabs, TabItem } from "@astrojs/starlight/components";
+import { Tabs, TabItem, LinkCard } from "@astrojs/starlight/components";
 import FileTree from "@components/file-tree.astro";
 
 Structure of a Nx Workspace with Angular, NgRx & DDD.
@@ -19,10 +19,10 @@ Structure of a Nx Workspace with Angular, NgRx & DDD.
     - domain/
       - src/
         - state+/
-          - selectors.ts
-          - reducers.ts
-          - actions.ts
-          - effects.ts
+          - users.selectors.ts
+          - users.reducers.ts
+          - users.actions.ts
+          - users.effects.ts
         - infrastructure
           - example.service.ts
         - application
@@ -96,3 +96,9 @@ Structure of a Nx Workspace with Angular, NgRx & DDD.
 ```json
 tba
 ```
+
+<LinkCard
+  title="Github discussions"
+  description="Discuss what you think about the example"
+  href="https://github.com/DominikPieper/nx-architectures/discussions/2"
+/>

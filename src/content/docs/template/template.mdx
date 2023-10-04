@@ -1,0 +1,41 @@
+---
+title: My title
+description: My descriptiomn
+author: Dominik Pieper
+---
+
+import { Tabs, TabItem, LinkCard } from "@astrojs/starlight/components";
+import FileTree from "@components/file-tree.astro";
+
+Add some initial text
+
+## Filestructure
+
+<FileTree>
+
+- libs/
+  - my-lib/
+    - test.ts
+    - bla.css
+  - my-lib2/
+
+</FileTree>
+
+## Files and Directories in depth
+
+- `libs/` Where my stuff goes
+- `test.ts` where my code goes
+
+## Module Boundaries configurations
+
+The eslint config for Nx Module Boundaries
+
+```json
+tbd
+```
+
+<LinkCard
+  title="Github discussions"
+  description="Discuss what you think about the example"
+  href="https://github.com/DominikPieper/nx-architectures/discussions"
+/>
