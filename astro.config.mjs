@@ -9,11 +9,11 @@ export default defineConfig({
   integrations: [
     starlight({
       title: "Nx Architectures",
-      /*logo: {
-        light: "/src/assets/logo-light.svg",
-        dark: "/src/assets/logo-dark.svg",
+      logo: {
+        light: "/src/assets/logo.png",
+        dark: "/src/assets/logo.png",
         replacesTitle: true,
-      },*/
+      },
       editLink: {
         baseUrl: "https://github.com/DominikPieper/nx-architectures/edit/main/",
       },
