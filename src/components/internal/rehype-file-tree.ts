@@ -1,39 +1,9 @@
-import { fromHtml } from 'hast-util-from-html';
 import { toString } from 'hast-util-to-string';
 import { h } from 'hastscript';
-import type { Element, HChild } from 'hastscript/lib/core';
+import type { HChild } from 'hastscript/lib/core';
 import { rehype } from 'rehype';
 import { CONTINUE, SKIP, visit } from 'unist-util-visit';
-import { getIcon } from './file-tree-icons';
-
-/** Make a text node with the pass string as its contents. */
-const Text = (value = ''): { type: 'text'; value: string } => ({
-	type: 'text',
-	value,
-});
-
-/** Convert an HTML string containing an SVG into a HAST element node. */
-const makeSVGIcon = (svgString: string) => {
-	const root = fromHtml(svgString, { fragment: true });
-	const svg = root.children[0] as Element;
-	svg.properties = {
-		...svg.properties,
-		width: 16,
-		height: 16,
-		class: 'tree-icon',
-		'aria-hidden': 'true',
-	};
-	return svg;
-};
-
-const FileIcon = (filename: string) => {
-	const { svg } = getIcon(filename);
-	return makeSVGIcon(svg);
-};
-
-const FolderIcon = makeSVGIcon(
-	'<svg viewBox="0 0 20 20"><path d="M14.77 6.45H9.8v-.47A.97.97 0 0 0 8.83 5H3.75v10H15.7V7.42a.91.91 0 0 0-.93-.97Z"/></svg>'
-);
+import { FileIcon, FolderIcon, Text } from './file-icon-utils';
 
 export const fileTreeProcessor = rehype().use(() => (tree, file) => {
 	const { directoryLabel } = file.data as { directoryLabel: string };

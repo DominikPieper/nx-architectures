@@ -1,0 +1,98 @@
+---
+title: NgRx and DDD
+description: Structure of Nx Workspace with Angular, NgRx and DDD.
+author: Daniel Glejzner
+---
+
+import { Tabs, TabItem } from "@astrojs/starlight/components";
+import FileTree from "@components/file-tree.astro";
+
+Structure of a Nx Workspace with Angular, NgRx & DDD.
+
+## Filestructure
+
+<FileTree>
+
+- apps/
+- libs/
+  - users/
+    - domain/
+      - src/
+        - state+/
+          - selectors.ts
+          - reducers.ts
+          - actions.ts
+          - effects.ts
+        - infrastructure
+          - example.service.ts
+        - application
+          - facade.service.ts
+        - entities
+          - example.interface.ts
+        - ...
+      - ...
+      - feature-a/
+        - src/
+          - lib/
+            - ui/
+              - ui.component.ts
+              - ui.component.html
+              - ui.component.scss
+            - feature.component.ts
+          - ...
+        - ...
+      - feature-b/
+        - src/
+          - lib/
+            - ui/
+              - ui.component.ts
+              - ui.component.html
+              - ui.component.scss
+          - feature.component.ts
+        - ...
+      - ...
+      - ui/
+        - ui-component/
+          - ui.component.ts
+          - ui.component.html
+          - ui.component.scss
+        - ...
+  - profiles/
+  - groups/
+  - shared/
+    - util-common/
+    - ui-common/
+    - util-auth/
+    - util-env/
+
+</FileTree>
+
+## Files and Directories in depth
+
+- `apps/` The primary entry for applications, orchestrating the integration of various libraries.
+- `libs/` A modular repository housing domain-specific logic, utilities, and components.
+- `users/` The domain encapsulating all user-centric logic, data structures, and functionalities.
+- `domain/` Core logic and state management for the 'users' domain, ensuring data integrity and flow.
+- `state+/` Houses the core state management files for the domain.
+  - `selectors.ts`: State selectors from NgrX
+  - `reducers.ts`: Reducers from NgRx
+  - `actions.ts`: Actions from NgRx
+  - `effects.ts`: Effects from NgRx
+- `infrastructure/` Services and utilities that interact with external systems, databases, or APIs.
+- `application/` High-level services that provide a unified interface to more complex subsystems.
+- `entities/` Data structures or models representing the core entities of the domain.
+- `ui` Domain or feature-specific UI components. Depth indicates scope: deeper nesting implies narrower sharing scope.
+- `feature-a & feature-b` Smart components within the 'users' domain, each addressing distinct functionalities and UI needs.
+- `profiles & groups` Distinct domains, analogous to 'users', each focusing on a specific application domain.
+- `shared` A domain for cross-domain utilities and UI components.
+- `util-common, ui-common, util-auth, util-env`
+  - `util-common` offers general utilities
+  - `ui-common` provides globally shared UI components
+  - `util-auth` focuses on authentication utilities
+  - `util-env` manages environment configurations.
+
+## Module Boundaries configurations
+
+```json
+tba
+```

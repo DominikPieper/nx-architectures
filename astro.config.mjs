@@ -35,17 +35,8 @@ export default defineConfig({
       },
       sidebar: [
         {
-          label: "Start Here",
-          items: [
-            {
-              label: "Getting Started",
-              link: "getting-started",
-            },
-          ],
-        },
-        {
-          label: "Guides",
-          autogenerate: { directory: "guides" },
+          label: "Architecture examples",
+          autogenerate: { directory: "examples" },
         },
       ],
       lastUpdated: true,
