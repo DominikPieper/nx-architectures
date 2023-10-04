@@ -1,6 +1,6 @@
 # Nx architectures Docs
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 ## 🧞 Commands
@@ -29,6 +29,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   <tbody>
     <tr>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/danielglejzner"><img src="https://avatars.githubusercontent.com/u/69144223?v=4?s=100" width="100px;" alt="Daniel Glejzner"/><br /><sub><b>Daniel Glejzner</b></sub></a><br /><a href="https://github.com/DominikPieper/nx-architectures/commits?author=danielglejzner" title="Documentation">📖</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/DominikPieper"><img src="https://avatars.githubusercontent.com/u/77470?v=4?s=100" width="100px;" alt="Dominik Pieper"/><br /><sub><b>Dominik Pieper</b></sub></a><br /><a href="https://github.com/DominikPieper/nx-architectures/commits?author=DominikPieper" title="Documentation">📖</a></td>
     </tr>
   </tbody>
   <tfoot>
