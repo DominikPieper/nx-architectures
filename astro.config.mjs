@@ -14,6 +14,7 @@ export default defineConfig({
         dark: "/src/assets/logo.png",
         replacesTitle: true,
       },
+      favicon: '/src/assets/logo.png',
       editLink: {
         baseUrl: "https://github.com/DominikPieper/nx-architectures/edit/main/",
       },
